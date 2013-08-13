@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the court info index.")
+def index(request): 
+    return render(request, 'CourtInfo/court_info.html',  )
