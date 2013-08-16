@@ -20,11 +20,11 @@
           explore
           </span> 
         </div>
-        <iframe frameBorder="0" style="width:100%; height:350px; margin:0px; border:0px; padding:0px; border-bottom:solid 1px #E5D200;" src="http://photosynth.net/embed.aspx?cid=816510b9-69c3-4d39-b81d-849a31377373&delayLoad=false">
+        <iframe frameBorder="0" style="width:100%; height:350px; margin:0px; border:0px; padding:0px; border-bottom:solid 1px #E5D200;" src="{{ court.photosynth_url }}">
             Fallback image.
         </iframe>
         <div style="color:white; width:100%; font-size:40px; background-color:#313131; margin-top:-10px; border:0px; padding-left:5px; padding-top:5px; padding-bottom:5px;"> 
-          &nbsp; Mount Pleasant Park 
+          &nbsp; {{ court.name }}
         </div>
         
         <div class="SpacerLarge"> </div>
@@ -38,12 +38,12 @@
                 Location
             </div>
             <div id="mapviewer">
-                <iframe id="map" style="border: 1px solid #919191;" scrolling="no" width="300" height="260" frameborder="0" src="http://www.bing.com/maps/embed/?v=2&amp;cp=43.867352~-79.441387&amp;lvl=16&amp;dir=0&amp;sty=r&amp;form=LMLTEW&amp;emid=06fed9a4-5ef7-5bc3-13c3-641a2514f033"></iframe>
+                <iframe id="map" style="border: 1px solid #919191;" scrolling="no" width="300" height="260" frameborder="0" src="{{ court.map_url }}"></iframe>
                 <div id="LME_maplinks" style="line-height:20px;">
-                    <a id="LME_largerMap" href="http://www.bing.com/maps/?v=2&amp;cp=43.867352~-79.441387&amp;lvl=16&amp;dir=0&amp;sty=r&amp;form=LMLTEW" target="_blank" style="margin:0 7px">
+                    <a id="LME_largerMap" href="{{ court.larger_map_url }}" target="_blank">
                         View Larger Map
                     </a><br>
-                    <a id="LME_directions" href="http://www.bing.com/maps/?v=2&amp;cp=43.867352~-79.441387&amp;lvl=16&amp;dir=0&amp;sty=r&amp;form=LMLTEW&amp;rtp=%7Epos.43.867352203267814_-79.4413865636901_Greater%20Toronto%20Metro%20Area" target="_blank" style="margin:0 7px">
+                    <a id="LME_directions" href="{{ court.get_directions_url }}" target="_blank">
                         Get Directions
                     </a>
                 </div>
@@ -54,9 +54,7 @@
                 Court Info
             </div>
             <div class="TextNormalStyle">
-                4 courts<br>
-                Overhead lights<br>
-                max play time: 1 set or 30 minutes
+                {{ court.court_info_html|safe }}
             </div>
             
             <div class="SpacerLarge"> </div>
@@ -65,9 +63,7 @@
                 Court Conditions
             </div>
             <div class="TextNormalStyle">
-                Lots of holes <br>
-                Sandy in some spots <br>
-                2 of the nets are droopy
+                {{ court.court_condition_html|safe }}
             </div>
             
             <div class="SpacerLarge"> </div>
@@ -75,11 +71,15 @@
             <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
                 Things Nearby
             </div>
-            <div class="TextNormalStyle">
-                Playground <br>
-                <a href=""> Wave pool </a> <br>
-                <a href=""> Steer Inn Grill </a> <br>
-                <a href=""> Richmond Hill Library </a> <br>
+            <div class="TextNormalStyle"> 
+                {% for thing in court.thingsnearby_set.all %}
+                    {% if thing.url %}
+                        <a href="{{ thing.url }}"> {{ thing.text }} </a>
+                    {% else %}
+                        {{ thing.text }}
+                    {% endif %}   
+                    <br>
+                {% endfor %}
             </div>
             
             <div class="SpacerLarge"> </div>
