@@ -7,9 +7,10 @@ class ThingsNearbyInline(admin.TabularInline):
 
 class CourtAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None,   { 'fields': ['name', 'slug', 'city', 'province', 'country', 'geo_position']}), 
+        (None,   { 'fields': ['name', 'slug']}),
+        ('Location', { 'fields': ['city', 'province', 'country', 'geo_position']}),
         ('Visuals', {'fields': ['photosynth_url']}),
-        ('Details', {'fields': ['court_info', 'court_condition']}),
+        ('Details', {'fields': ['is_public', 'court_info', 'court_condition']}),
     ]
     inlines = [ThingsNearbyInline]
 

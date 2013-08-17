@@ -5,14 +5,15 @@ from geoposition.fields import GeopositionField
 class Court(models.Model):
     photosynth_url = models.URLField()
     
-    full_address = models.CharField(max_length=200)
-    
     geo_position = GeopositionField()
     
     name = models.CharField(max_length=100)
+    address = models.CharField(max_length=100, blank=True)
     city = models.CharField(max_length=100, default='Richmond Hill')
     province = models.CharField(max_length=100, default='Ontario')
     country = models.CharField(max_length=100, default='Canada')
+    
+    is_public = models.BooleanField(default=True)
     
     slug = models.SlugField(unique=True)
     
@@ -29,7 +30,10 @@ class Court(models.Model):
         return self.court_condition.replace('\n', '<br>')
         
     def full_address(self):
-        return '{0}, {1}, {2}, {3}'.format(self.name, self.city, self.province, self.country)
+        if self.address:
+            return '{0}, {1}, {2}, {3}'.format(self.address, self.city, self.province, self.country)
+        else:
+            return '{0}, {1}, {2}, {3}'.format(self.name, self.city, self.province, self.country)
         
     
 class ThingsNearby(models.Model):
