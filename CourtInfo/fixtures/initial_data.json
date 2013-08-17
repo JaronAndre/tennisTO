@@ -6,9 +6,11 @@
         {
             "slug": "mount_pleasant_park", 
             "name": "Mount Pleasant Park", 
+            "city": "Richmond Hill",
+            "province": "Ontario",
+            "country": "Canada",
             "geo_position": "43.8675337,-79.44190759999998",
             "photosynth_url": "http://photosynth.net/embed.aspx?cid=816510b9-69c3-4d39-b81d-849a31377373&delayLoad=false&slideShowPlaying=false",
-            "full_address": "Mount Pleasant Park, Richmond Hill, ON, Canada",
             "court_info": "Line 1\nLine2\nLine3",
             "court_condition": "Line 1\nLine2\nLine3"
         }
@@ -19,10 +21,12 @@
         "fields": 
         {
             "slug": "willow_grove_park", 
-            "name": "Willow Grove Park ", 
+            "name": "Willow Grove Park ",
+            "city": "Richmond Hill",
+            "province": "Ontario",
+            "country": "Canada",
             "geo_position": "43.8788193,-79.40620609999996",
             "photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
-            "full_address": "Willow Grove Park, Richmond Hill, ON, L4S 2A3",
             "court_info": "Line 1\nLine2\nLine3",
             "court_condition": "Line 1\nLine2\nLine3"
         }
@@ -33,10 +37,12 @@
         "fields": 
         {
             "slug": "tannery_park", 
-            "name": "Tannery Park ", 
+            "name": "Tannery Park ",
+            "city": "Richmond Hill",
+            "province": "Ontario",
+            "country": "Canada",
             "geo_position": "43.8538111,-79.45790720000002",
             "photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
-            "full_address": "Tannery Park, Richmond Hill, ON",
             "court_info": "Line 1\nLine2\nLine3",
             "court_condition": "Brand new"
         }

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block javascript_includes %}
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
@@ -19,14 +20,19 @@ function initialize() {
   // Try HTML5 geolocation
   if(navigator.geolocation) 
   {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = new google.maps.LatLng(position.coords.latitude,
-                                       position.coords.longitude);
-
-      map.setCenter(pos);
-    }, function() {
-      handleNoGeolocation(true);
-    });
+    navigator.geolocation.getCurrentPosition(
+      function(position) 
+      {
+        var pos = new google.maps.LatLng(
+          position.coords.latitude,
+          position.coords.longitude);
+        map.setCenter(pos);
+      }, 
+      function() 
+      {
+        handleNoGeolocation(true);
+      }
+    );
   } 
   else 
   {

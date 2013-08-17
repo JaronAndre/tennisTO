@@ -10,6 +10,10 @@ class Court(models.Model):
     geo_position = GeopositionField()
     
     name = models.CharField(max_length=100)
+    city = models.CharField(max_length=100, default='Richmond Hill')
+    province = models.CharField(max_length=100, default='Ontario')
+    country = models.CharField(max_length=100, default='Canada')
+    
     slug = models.SlugField(unique=True)
     
     court_info = models.TextField(blank=True)
@@ -23,6 +27,9 @@ class Court(models.Model):
         
     def court_condition_html(self):
         return self.court_condition.replace('\n', '<br>')
+        
+    def full_address(self):
+        return '{0}, {1}, {2}, {3}'.format(self.name, self.city, self.province, self.country)
         
     
 class ThingsNearby(models.Model):

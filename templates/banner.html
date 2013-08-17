@@ -1,8 +1,29 @@
 <div style="color:white; width:100%; font-size:30px; background-color:black; margin-top:-10px; border:0px; padding-left:5px; padding-top:5px; padding-bottom:5px;"> 
     &nbsp; tennisTO &nbsp; &nbsp;
     <span style="color:#E5D200; font-size:20px;">
-    <a href="/" style="color:#E5D200;"> home </a> &nbsp; <span style="color:gray;"> | </span> &nbsp;
-    about &nbsp; <span style="color:gray;"> | </span> &nbsp;
-    explore
+    
+    {% if is_homepage %}
+      <a href="/" style="color:white;"> 
+    {% else %}
+      <a href="/" style="color:#E5D200;"> 
+    {% endif %}
+    home </a> 
+    
+    &nbsp; 
+    <span style="color:gray;"> | </span> 
+    &nbsp;
+    
+    {% if is_explore_page %}
+      <a href="/explore/" style="color:white;"> 
+    {% else %}
+      <a href="/explore/" style="color:#E5D200;">
+    {% endif %}
+    explore </a> 
+    
+    &nbsp; 
+    <span style="color:gray;"> | </span> 
+    &nbsp;
+    
+    about
     </span>
 </div>

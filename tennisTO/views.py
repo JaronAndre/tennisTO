@@ -3,6 +3,6 @@ from django.http import HttpResponse
 from CourtInfo.models import Court
 
 def home(request):
-    context = {}
+    context = {'is_homepage': True}
     return render(request, 'homepage.html', context)
     

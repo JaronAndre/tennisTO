@@ -39,8 +39,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "geoposition", # For the latitude and longitude maps control
+    'geoposition', # For the latitude and longitude admin maps control
     'CourtInfo',
+    'Explore',
 )
 
 MIDDLEWARE_CLASSES = (
