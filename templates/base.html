@@ -2,7 +2,11 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title> Tennis TO </title>
+        <title> 
+            {% block page_title %}
+                tennisTO 
+            {% endblock %}
+        </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="{% static 'internnest.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'controls.css' %}">

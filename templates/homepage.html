@@ -10,32 +10,47 @@ var map;
 
 function initialize() {
   var mapOptions = {
-    zoom: 15,
+    zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
   // Try HTML5 geolocation
-  if(navigator.geolocation) {
+  if(navigator.geolocation) 
+  {
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = new google.maps.LatLng(position.coords.latitude,
                                        position.coords.longitude);
-
-      var infowindow = new google.maps.InfoWindow({
-        map: map,
-        position: pos,
-        content: 'Location found using HTML5.'
-      });
 
       map.setCenter(pos);
     }, function() {
       handleNoGeolocation(true);
     });
-  } else {
+  } 
+  else 
+  {
     // Browser doesn't support Geolocation
     handleNoGeolocation(false);
   }
+  
+  // Add markers for each court we have in the database
+  $.getJSON("/courts/markers_list/", function(result){
+    $.each(result, function(i, court){
+      var position_strs = court.fields.geo_position.split(',');
+      var latitude = parseFloat(position_strs[0]);
+      var longitude = parseFloat(position_strs[1]);
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(latitude, longitude),
+        map: map,
+        title: court.fields.name
+      });
+      
+      google.maps.event.addListener(marker, 'click', function() {
+        window.location.href = '{% url 'viewCourtInfoBase' %}' + court.fields.slug + '/';
+      });
+    });
+  });
 }
 
 function handleNoGeolocation(errorFlag) {

@@ -1,12 +1,13 @@
 from django.db import models
+from geoposition.fields import GeopositionField
 
 
 class Court(models.Model):
     photosynth_url = models.URLField()
     
-    map_url = models.URLField()
-    larger_map_url = models.URLField()
-    get_directions_url = models.URLField()
+    full_address = models.CharField(max_length=200)
+    
+    geo_position = GeopositionField()
     
     name = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
