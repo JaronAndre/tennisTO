@@ -27,3 +27,9 @@ def getCourtMarkersJSON(request):
     data = serializers.serialize("json", courts, fields = fields)
     return HttpResponse(data, content_type="application/json")
     
+
+def getCourtMarkersJSON2(request):
+    courts = Court.objects.all()
+    data = serializers.serialize("json", courts)
+    return HttpResponse(data)
+    
