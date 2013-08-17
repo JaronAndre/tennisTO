@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %} tennisTO {% trans 'Django site admin' %}{% endblock %}
+
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'admin.css' %}" />
+{% endblock %}
+
+{% block branding %}
+tennisTO <span style="color:#E5D200; font-size:20px;"> {% trans 'administration' %} </span>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

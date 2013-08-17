@@ -1,0 +1,33 @@
+#header
+{
+    color:white;
+    font-size:30px; 
+    background-color:black; 
+    padding-top:5px; 
+    padding-bottom:5px;
+}
+
+#branding
+{
+    color:white;
+    font-size: 34px;
+    margin-left: 30px;
+}
+
+#user-tools
+{
+    font-size: 15px;
+    vertical-align:text-bottom;
+    line-height: 34px; 
+}
+
+body 
+{
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    height: 100%;
+    background-color: WhiteSmoke;
+    overflow-x : hidden;
+    font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, "sans-serif";
+}
