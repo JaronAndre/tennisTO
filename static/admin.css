@@ -31,3 +31,14 @@ body
     overflow-x : hidden;
     font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, "sans-serif";
 }
+
+.module h2, .module caption, .inline-group h2 {
+    margin: 0;
+    padding: 2px 5px 3px 5px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: normal;
+    background-color: #313131;
+    background-image: url('');
+    color: white;
+}

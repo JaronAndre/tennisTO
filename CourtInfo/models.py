@@ -6,6 +6,9 @@ class Country(models.Model):
     name = models.CharField(max_length=50)
     def __unicode__(self):
         return self.name
+    class Meta:
+        verbose_name = 'country'
+        verbose_name_plural = 'countries'
         
         
 class Province(models.Model):
@@ -19,6 +22,9 @@ class Province(models.Model):
             return '{0}, {1}'.format(self.short_name, self.country.name)
         else:
             return '{0}, {1}'.format(self.name, self.country.name)
+    class Meta:
+        verbose_name = 'province'
+        verbose_name_plural = 'provinces'
 
 
 class City(models.Model):
@@ -30,6 +36,9 @@ class City(models.Model):
         return '{0}, {1}'.format(self.name, self.province.full_address())
     def sorted_courts(self):
         return self.court_set.order_by('name')
+    class Meta:
+        verbose_name = 'city'
+        verbose_name_plural = 'cities'
 
 
 class Court(models.Model):
@@ -62,6 +71,10 @@ class Court(models.Model):
             return '{0}, {1}'.format(self.street_address, self.city.full_address())
         else:
             return '{0}, {1}'.format(self.name, self.city.full_address())
+    
+    class Meta:
+        verbose_name = 'court'
+        verbose_name_plural = 'courts'
         
 
 class ThingsNearby(models.Model):
