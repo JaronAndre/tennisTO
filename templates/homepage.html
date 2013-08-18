@@ -10,6 +10,7 @@
 var map;
 
 function initialize() {
+
   var mapOptions = {
     zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -20,24 +21,21 @@ function initialize() {
   // Try HTML5 geolocation
   if(navigator.geolocation) 
   {
-    navigator.geolocation.getCurrentPosition(
-      function(position) 
-      {
-        var pos = new google.maps.LatLng(
-          position.coords.latitude,
-          position.coords.longitude);
-        map.setCenter(pos);
-      }, 
-      function() 
-      {
-        handleNoGeolocation(true);
-      }
-    );
+      navigator.geolocation.getCurrentPosition(
+          function(position){
+              var user_position = new google.maps.LatLng(
+                  position.coords.latitude,
+                  position.coords.longitude);
+              map.setCenter(user_position);
+          }, 
+          function(){
+              handleNoGeolocation(true);
+          });
   } 
   else 
   {
-    // Browser doesn't support Geolocation
-    handleNoGeolocation(false);
+      // Browser doesn't support Geolocation
+      handleNoGeolocation(false);
   }
   
   // Add markers for each court we have in the database

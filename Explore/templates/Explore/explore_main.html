@@ -5,18 +5,35 @@ Explore - tennisTO
 {% endblock %}
 
 {% block content %}
-
-
-{% for city in cities %}
-    <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
-    {{ city.name }}
+<div id="contentDiv" style="width:800px; margin-left:auto; margin-right:auto; margin-top:30px;">
+  <div style="font-size:35px;">
+    Explore
+  </div>
+  
+  <div style="float:left; width:190px;">
+    <div class="TextTitle2Style">
+      Cities
     </div>
-    
-    {% for court in city.sorted_courts %}
+    {% for city in cities %}
       <div class="TextNormalStyle">
-      <a href="/courts/view/{{ court.slug }}/"> {{ court.name }} </a>
+      {{ city.name }}
       </div>
     {% endfor %}
-    <div class="SpacerLarge"> </div>
-{% endfor %}
+  </div>
+  
+  <div style="float:left; width:610px;">
+    {% for city in cities %}
+      <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
+      {{ city.name }}
+      </div>
+      
+      {% for court in city.sorted_courts %}
+        <div class="TextNormalStyle">
+        <a href="/courts/view/{{ court.slug }}/"> {{ court.name }} </a>
+        </div>
+      {% endfor %}
+      <div class="SpacerLarge"> </div>
+    {% endfor %}
+  </div>
+</div>
 {% endblock %}
