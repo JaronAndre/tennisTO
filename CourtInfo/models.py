@@ -49,7 +49,8 @@ class Court(models.Model):
     
     slug = models.SlugField(unique=True)
     
-    photosynth_url = models.URLField()
+    photosynth_url = models.URLField(blank=True)
+    fallback_image_url = models.URLField(blank=True)
     
     is_public = models.BooleanField(default=True)
     court_info = models.TextField(blank=True)
