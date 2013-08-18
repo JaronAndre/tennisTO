@@ -1,15 +1,17 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from CourtInfo.models import Court, City
 
 
-def index(request): 
+def index(request):
     courts = Court.objects.all()
-    cities = {}
-    for court in courts:
-        if cities[court.city] == undefined:
-            cities[court.city] = [court]
-        else:
-            cities[court.city].add(court)
+       
+    # Group the courts into cities
+    cities = City.objects.all().order_by('name')
     
-    context = {'is_explore_page': True}
+    context = {
+        'is_explore_page': True,
+        'cities': cities
+    }
     return render(request, 'Explore/explore_main.html', context)
+

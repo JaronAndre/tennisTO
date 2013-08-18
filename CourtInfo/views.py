@@ -33,3 +33,9 @@ def getCourtMarkersJSON2(request):
     data = serializers.serialize("json", courts)
     return HttpResponse(data)
     
+
+def getCourtsInCity(request, city):
+    courts = Court.objects.filter(city = city)
+    fields = ('name', 'slug', 'is_public')
+    data = serializers.serialize("json", courts, fields = fields)
+    return HttpResponse(data, content_type="application/json")

@@ -1,71 +1,94 @@
 [
-    {
-        "pk": 1,
-        "model": "CourtInfo.court", 
-        "fields": 
-        {
-            "slug": "mount_pleasant_park", 
-            "name": "Mount Pleasant Park", 
-            "city": "Richmond Hill",
-            "province": "Ontario",
-            "country": "Canada",
-            "geo_position": "43.8675337,-79.44190759999998",
-            "photosynth_url": "http://photosynth.net/embed.aspx?cid=816510b9-69c3-4d39-b81d-849a31377373&delayLoad=false&slideShowPlaying=false",
-            "court_info": "Line 1\nLine2\nLine3",
-            "court_condition": "Line 1\nLine2\nLine3",
-            "is_public": "True"
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "CourtInfo.court", 
-        "fields": 
-        {
-            "slug": "willow_grove_park", 
-            "name": "Willow Grove Park",
-            "city": "Richmond Hill",
-            "province": "Ontario",
-            "country": "Canada",
-            "geo_position": "43.8788193,-79.40620609999996",
-            "photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
-            "court_info": "Line 1\nLine2\nLine3",
-            "court_condition": "Line 1\nLine2\nLine3",
-            "is_public": "True"
-        }
-    },
-    {
-        "pk": 3, 
-        "model": "CourtInfo.court", 
-        "fields": 
-        {
-            "slug": "tannery_park", 
-            "name": "Tannery Park",
-            "city": "Richmond Hill",
-            "province": "Ontario",
-            "country": "Canada",
-            "geo_position": "43.8538111,-79.45790720000002",
-            "photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
-            "court_info": "Line 1\nLine2\nLine3",
-            "court_condition": "Brand new",
-            "is_public": "True"
-        }
-    },
-    {
-        "pk": 4, 
-        "model": "CourtInfo.court", 
-        "fields": 
-        {
-            "slug": "rexall_centre_centre_court", 
-            "name": "Rexall Centre - Centre Court",
-            "address": "1 Shoreham Drive, York University - Keele Campus",
-            "city": "Toronto",
-            "province": "Ontario",
-            "country": "Canada",
-            "geo_position": "43.77155464951246,-79.51208003300474",
-            "photosynth_url": "http://photosynth.net/embed.aspx?cid=86568416-a213-4bd4-998a-c75b94e9d85c&delayLoad=false&slideShowPlaying=false",
-            "court_info": "Line 1\nLine2\nLine3",
-            "court_condition": "Pristine",
-            "is_public": "False"
-        }
-    }
+	{
+		"pk": 1,
+		"model": "CourtInfo.country",
+		"fields": {
+			"name": "Canada"
+		}
+	},
+	{
+		"pk": 1,
+		"model": "CourtInfo.province",
+		"fields": {
+			"country": 1,
+			"name": "Ontario",
+			"short_name": "ON"
+		}
+	},
+	{
+		"pk": 1,
+		"model": "CourtInfo.city",
+		"fields": {
+			"province": 1,
+			"name": "Toronto"
+		}
+	},
+	{
+		"pk": 2,
+		"model": "CourtInfo.city",
+		"fields": {
+			"province": 1,
+			"name": "Richmond Hill"
+		}
+	},
+	{
+		"pk": 1,
+		"model": "CourtInfo.court",
+		"fields": {
+			"city": 2,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Willow Grove Park",
+			"geo_position": "43.87898556839184,-79.40666743995058",
+			"photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
+			"is_public": true,
+			"slug": "willow_grove_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 2,
+		"model": "CourtInfo.court",
+		"fields": {
+			"city": 1,
+			"court_info": "",
+			"court_condition": "Impeccable",
+			"name": "Rexall Centre - Centre Court",
+			"geo_position": "43.771570144176245,-79.51210685509488",
+			"photosynth_url": "http://photosynth.net/embed.aspx?cid=86568416-a213-4bd4-998a-c75b94e9d85c&delayLoad=false&slideShowPlaying=false",
+			"is_public": false,
+			"slug": "rexall_centre_centre_court",
+			"street_address": "1 Shoreham Drive, York University - Keele Campus"
+		}
+	},
+	{
+		"pk": 3,
+		"model": "CourtInfo.court",
+		"fields": {
+			"city": 2,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Mount Pleasant Park",
+			"geo_position": "43.8678114,-79.44216549999999",
+			"photosynth_url": "http://photosynth.net/embed.aspx?cid=816510b9-69c3-4d39-b81d-849a31377373&delayLoad=false&slideShowPlaying=false",
+			"is_public": true,
+			"slug": "mount_pleasant_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 4,
+		"model": "CourtInfo.court",
+		"fields": {
+			"city": 2,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Tannery Park",
+			"geo_position": "43.8538111,-79.45790720000002",
+			"photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
+			"is_public": true,
+			"slug": "tannery_park",
+			"street_address": ""
+		}
+	}
 ]
