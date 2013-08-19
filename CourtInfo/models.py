@@ -40,7 +40,19 @@ class City(models.Model):
         verbose_name = 'city'
         verbose_name_plural = 'cities'
 
-
+        
+SURFACE_TYPE_CHOICES = (
+    (0, ''),
+    (1, 'Acrylic'),
+    (2, 'Artificial clay'),
+    (3, 'Artificial grass'),
+    (4, 'Asphalt'),
+    (5, 'Carpet'),
+    (6, 'Clay'),
+    (7, 'Concrete'),
+    (8, 'Grass'),
+)
+     
 class Court(models.Model):
     name = models.CharField(max_length=100)
     street_address = models.CharField(max_length=150, blank=True)
@@ -55,6 +67,7 @@ class Court(models.Model):
     is_public = models.BooleanField(default=True)
     number_of_courts = models.IntegerField(default=2, blank=True)
     has_lights = models.BooleanField(default=True)
+    surface_type = models.IntegerField(default=4, choices=SURFACE_TYPE_CHOICES)
     court_info = models.TextField(blank=True)
     court_condition = models.TextField(blank=True)
     
@@ -68,12 +81,15 @@ class Court(models.Model):
         return self.court_condition.replace('\n', '<br>')
         
     def full_address(self):
-        cityName = self.city.name;
-        provinceName = self.city.province.name;
+        cityName = self.city.name
+        provinceName = self.city.province.name
         if self.street_address:
             return '{0}, {1}'.format(self.street_address, self.city.full_address())
         else:
             return '{0}, {1}'.format(self.name, self.city.full_address())
+    
+    def surface_type_string(self):
+        return SURFACE_TYPE_CHOICES[self.surface_type][1]
     
     class Meta:
         verbose_name = 'court'

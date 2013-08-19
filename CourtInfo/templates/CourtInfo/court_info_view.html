@@ -77,6 +77,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
             Has overhead lights <br>
         {% else %}
             No overhead lights <br>
+        {% endif %}
+        {% if court.surface_type %}
+            {{ court.surface_type_string }} surface <br>
         {% endif %} 
         {{ court.court_info_html|safe }}
     </div>

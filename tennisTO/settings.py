@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'geoposition', # For the latitude and longitude admin maps control
+    'south', # Database migration tool
     'CourtInfo',
     'Explore',
 )
