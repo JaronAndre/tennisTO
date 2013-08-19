@@ -930,5 +930,707 @@
 			"slug": "clanton_park",
 			"street_address": "4100-4112 Bathurst Street"
 		}
+	},
+	{
+		"pk": 51,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Irving W Chapley Community Centre",
+			"geo_position": "43.7617549,-79.45618189999999",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "irving_w_chapley_community_centre",
+			"street_address": "205 Wilmington Ave"
+		}
+	},
+	{
+		"pk": 52,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Rockford Park",
+			"geo_position": "43.7864786,-79.45386359999998",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "rockford_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 53,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Champlain Park",
+			"geo_position": "43.73222080000001,-79.44410549999998",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "champlain_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 54,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Baycrest Park",
+			"geo_position": "43.7268234,-79.4457759",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "baycrest_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 55,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Glendora Park",
+			"geo_position": "43.76096903635869,-79.39792075183715",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "glendora_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 56,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Hendon Park",
+			"geo_position": "43.7817886,-79.4209808",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "hendon_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 57,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Moore Park",
+			"geo_position": "43.791828338047694,-79.43556289577026",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "moore_park",
+			"street_address": "110 Cactus Avenue"
+		}
+	},
+	{
+		"pk": 58,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Goulding Park",
+			"geo_position": "43.791187795854995,-79.42192680654603",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "goulding_park",
+			"street_address": "Lariviere Road"
+		}
+	},
+	{
+		"pk": 59,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Wedgewood Park",
+			"geo_position": "43.790750708019395,-79.40641842513122",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "wedgewood_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 60,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Sweeney Park",
+			"geo_position": "43.7362778,-79.31592369999998",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "sweeney_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 61,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Graydon Hall Park",
+			"geo_position": "43.7629992,-79.3419791",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "graydon_hall_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 62,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Fenside Park",
+			"geo_position": "43.7645669,-79.32719179999998",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "fenside_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 63,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Roywood Park",
+			"geo_position": "43.7646931,-79.32067760000001",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "roywood_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 64,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Parkway Forest Park",
+			"geo_position": "43.7712173,-79.341275",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "parkway_forest_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 65,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Bayview Village Park",
+			"geo_position": "43.773363642171965,-79.38893602963867",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "bayview_village_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 66,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Shawnee Park",
+			"geo_position": "43.7977009,-79.3366982",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "shawnee_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 67,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Ruddington Park",
+			"geo_position": "43.7922716,-79.38914190000003",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "ruddington_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 68,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Bestview Park",
+			"geo_position": "43.8025168025489,-79.38330795211488",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "bestview_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 69,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Cliffwood Park",
+			"geo_position": "43.80820498475125,-79.35444825211482",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "cliffwood_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 70,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "McNicoll Park",
+			"geo_position": "43.798054270647,-79.35388246574547",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "mcnicoll_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 71,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Topham Park",
+			"geo_position": "43.7109199621312,-79.30653573984222",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "topham_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 72,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "High Park",
+			"geo_position": "43.65056756579476,-79.46426153173832",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "high_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 73,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Sorauren Park",
+			"geo_position": "43.64910676466571,-79.44410164365542",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "sorauren_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 74,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Runnymede Park",
+			"geo_position": "43.6685156,-79.47847409999997",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "runnymede_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 75,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Earlscourt Park",
+			"geo_position": "43.673784,-79.45172780000001",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "earlscourt_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 76,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Symington Ave Playground",
+			"geo_position": "43.66658122543952,-79.45192641415565",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "symington_ave_playground",
+			"street_address": "360 Symington Ave"
+		}
+	},
+	{
+		"pk": 77,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Dovercourt Park",
+			"geo_position": "43.66552387348236,-79.43330355358125",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "dovercourt_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 78,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Trinity-Bellwoods Park",
+			"geo_position": "43.64650063044162,-79.41236647406618",
+			"number_of_courts": 8,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "trinity_bellwoods_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 79,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Stanley Park",
+			"geo_position": "43.64169414329825,-79.40790668808296",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "stanley_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 80,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Coleman Park",
+			"geo_position": "43.6893699,-79.29981149999998",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "coleman_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 81,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Moss Park",
+			"geo_position": "43.65512682290789,-79.37224590016939",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "moss_park",
+			"street_address": "166 George Street"
+		}
+	},
+	{
+		"pk": 82,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Ramsden Park",
+			"geo_position": "43.6762066945997,-79.39174864893494",
+			"number_of_courts": 8,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "ramsden_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 83,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Eglinton Park",
+			"geo_position": "43.7080103,-79.40603019999998",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "eglinton_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 84,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Joel Weeks Parkette",
+			"geo_position": "43.659193387022,-79.3530327183853",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "joel_weeks_parkette",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 85,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Jimmie Simpson Park",
+			"geo_position": "43.66098779998985,-79.34432879563133",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "jimmie_simpson_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 86,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Riverdale Park East",
+			"geo_position": "43.67195862020423,-79.35566518465578",
+			"number_of_courts": 7,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "riverdale_park_east",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 87,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Withrow Park",
+			"geo_position": "43.67584453430498,-79.34843987196655",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "withrow_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 88,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Jonathan Ashbridge Park",
+			"geo_position": "43.6648182,-79.31997339999998",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "jonathan_ashbridge_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 89,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Lakeshore Public Tennis Courts",
+			"geo_position": "43.633513,-79.43803000000003",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "lakeshore_public_tennis_courts",
+			"street_address": ""
+		}
 	}
 ]
