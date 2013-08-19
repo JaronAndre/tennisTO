@@ -41,10 +41,10 @@
 			"court_condition": "",
 			"name": "Willow Grove Park",
 			"geo_position": "43.87898556839184,-79.40666743995058",
+			"number_of_courts": 2,
 			"photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 2,
-      "has_lights": false,
 			"slug": "willow_grove_park",
 			"street_address": ""
 		}
@@ -59,10 +59,10 @@
 			"court_condition": "Impeccable",
 			"name": "Rexall Centre - Centre Court",
 			"geo_position": "43.771570144176245,-79.51210685509488",
+			"number_of_courts": 1,
 			"photosynth_url": "http://photosynth.net/embed.aspx?cid=86568416-a213-4bd4-998a-c75b94e9d85c&delayLoad=false&slideShowPlaying=false",
+			"has_lights": true,
 			"is_public": false,
-      "number_of_courts": 1,
-      "has_lights": true,
 			"slug": "rexall_centre_centre_court",
 			"street_address": "1 Shoreham Drive, York University - Keele Campus"
 		}
@@ -77,10 +77,10 @@
 			"court_condition": "",
 			"name": "Mount Pleasant Park",
 			"geo_position": "43.8678114,-79.44216549999999",
+			"number_of_courts": 4,
 			"photosynth_url": "http://photosynth.net/embed.aspx?cid=816510b9-69c3-4d39-b81d-849a31377373&delayLoad=false&slideShowPlaying=false",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 4,
-      "has_lights": true,
 			"slug": "mount_pleasant_park",
 			"street_address": ""
 		}
@@ -95,10 +95,10 @@
 			"court_condition": "",
 			"name": "Tannery Park",
 			"geo_position": "43.8538111,-79.45790720000002",
+			"number_of_courts": 2,
 			"photosynth_url": "http://photosynth.net/embed.aspx?cid=a77cec90-2da3-4abf-b374-da186436ef2b&delayLoad=false&slideShowPlaying=false",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 2,
-      "has_lights": true,
 			"slug": "tannery_park",
 			"street_address": ""
 		}
@@ -113,10 +113,10 @@
 			"court_condition": "",
 			"name": "Bayview Hill Park",
 			"geo_position": "43.86875306431969,-79.4026193883605",
+			"number_of_courts": 5,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 5,
-      "has_lights": true,
 			"slug": "bayview_hill_park",
 			"street_address": ""
 		}
@@ -131,10 +131,10 @@
 			"court_condition": "",
 			"name": "Brickworks Park",
 			"geo_position": "43.95485582335055,-79.43754831188659",
+			"number_of_courts": 3,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 3,
-      "has_lights": true,
 			"slug": "brickworks_park",
 			"street_address": ""
 		}
@@ -149,10 +149,10 @@
 			"court_condition": "",
 			"name": "Crosby Park",
 			"geo_position": "43.88397819377119,-79.42863975952451",
+			"number_of_courts": 6,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 6,
-      "has_lights": true,
 			"slug": "crosby_park",
 			"street_address": ""
 		}
@@ -167,10 +167,10 @@
 			"court_condition": "",
 			"name": "David Hamilton Park",
 			"geo_position": "43.8550622,-79.39688280000001",
+			"number_of_courts": 6,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 6,
-      "has_lights": true,
 			"slug": "david_hamilton_park",
 			"street_address": ""
 		}
@@ -185,10 +185,10 @@
 			"court_condition": "",
 			"name": "Grovewood Park",
 			"geo_position": "43.93729823287899,-79.46881881586916",
+			"number_of_courts": 3,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 3,
-      "has_lights": false,
 			"slug": "grovewood_park",
 			"street_address": ""
 		}
@@ -203,10 +203,10 @@
 			"court_condition": "",
 			"name": "Headwaters Community Park",
 			"geo_position": "43.892063330783955,-79.40097605396727",
+			"number_of_courts": 3,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 3,
-      "has_lights": true,
 			"slug": "headwaters_community_park",
 			"street_address": ""
 		}
@@ -221,10 +221,10 @@
 			"court_condition": "",
 			"name": "Chapman Park",
 			"geo_position": "43.8331992,-79.44120429999998",
+			"number_of_courts": 2,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 2,
-      "has_lights": false,
 			"slug": "chapman_park",
 			"street_address": ""
 		}
@@ -239,10 +239,10 @@
 			"court_condition": "",
 			"name": "Larratt Lea Park",
 			"geo_position": "43.89406344846795,-79.45909794066165",
+			"number_of_courts": 2,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 2,
-      "has_lights": false,
 			"slug": "larratt_lea_park",
 			"street_address": "50 Springer Drive"
 		}
@@ -257,10 +257,10 @@
 			"court_condition": "",
 			"name": "Morgan Boyle Park",
 			"geo_position": "43.839287411615324,-79.43539490978696",
+			"number_of_courts": 2,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 2,
-      "has_lights": true,
 			"slug": "morgan_boyle_park",
 			"street_address": ""
 		}
@@ -275,10 +275,10 @@
 			"court_condition": "",
 			"name": "Newberry Park",
 			"geo_position": "43.90010564421868,-79.43170859999998",
+			"number_of_courts": 4,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 4,
-      "has_lights": true,
 			"slug": "newberry_park",
 			"street_address": ""
 		}
@@ -293,10 +293,10 @@
 			"court_condition": "",
 			"name": "Ozark Park",
 			"geo_position": "43.94099834792127,-79.45047737514653",
+			"number_of_courts": 2,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 2,
-      "has_lights": false,
 			"slug": "ozark_park",
 			"street_address": ""
 		}
@@ -311,10 +311,10 @@
 			"court_condition": "",
 			"name": "Pine Farm Park",
 			"geo_position": "43.9533622,-79.45105060000003",
+			"number_of_courts": 1,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 1,
-      "has_lights": false,
 			"slug": "pine_farm_park",
 			"street_address": ""
 		}
@@ -325,14 +325,14 @@
 		"fields": {
 			"fallback_image_url": "",
 			"city": 2,
-			"court_info": "",
+			"court_info": "2 courts",
 			"court_condition": "",
 			"name": "Raccoon Park",
 			"geo_position": "43.95303180929355,-79.46799356004936",
+			"number_of_courts": 2,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 2,
-      "has_lights": false,
 			"slug": "raccoon_park",
 			"street_address": ""
 		}
@@ -347,10 +347,10 @@
 			"court_condition": "",
 			"name": "Russell Tilt Park",
 			"geo_position": "43.95217007383349,-79.46271479895017",
+			"number_of_courts": 3,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 3,
-      "has_lights": false,
 			"slug": "russell_tilt_park",
 			"street_address": ""
 		}
@@ -365,10 +365,10 @@
 			"court_condition": "",
 			"name": "Russell Farm Park",
 			"geo_position": "43.84853744102509,-79.41244467326362",
+			"number_of_courts": 4,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 4,
-      "has_lights": false,
 			"slug": "russell_farm_park",
 			"street_address": "Bantry Avenue and Yukon Drive"
 		}
@@ -383,10 +383,10 @@
 			"court_condition": "",
 			"name": "Silver Stream Park",
 			"geo_position": "43.882867044454414,-79.40386410475469",
+			"number_of_courts": 4,
 			"photosynth_url": "",
+			"has_lights": false,
 			"is_public": true,
-      "number_of_courts": 4,
-      "has_lights": false,
 			"slug": "silver_stream_park",
 			"street_address": ""
 		}
@@ -401,12 +401,534 @@
 			"court_condition": "",
 			"name": "Stavert Park",
 			"geo_position": "43.87957245364781,-79.45995614976806",
+			"number_of_courts": 3,
 			"photosynth_url": "",
+			"has_lights": true,
 			"is_public": true,
-      "number_of_courts": 3,
-      "has_lights": true,
 			"slug": "stavert_park",
 			"street_address": "71 Regent Street"
+		}
+	},
+	{
+		"pk": 22,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Millwood Park",
+			"geo_position": "43.6320372,-79.5782542",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "millwood_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 23,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Glen Park",
+			"geo_position": "43.65073062113573,-79.55281427514649",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "glen_park",
+			"street_address": "13-15 Shaver Court"
+		}
+	},
+	{
+		"pk": 24,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Centennial Park",
+			"geo_position": "43.65404210000001,-79.58843689999998",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "centennial_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 25,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Westgrove Park",
+			"geo_position": "43.682096,-79.5677192",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "westgrove_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 26,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Rexlington Park",
+			"geo_position": "43.71629679999999,-79.55929029999999",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "rexlington_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 27,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Summerlea Park",
+			"geo_position": "43.731588,-79.54840189999999",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "summerlea_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 28,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Sunnydale Acres",
+			"geo_position": "43.72396639999999,-79.5782542",
+			"number_of_courts": 4,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "sunnydale_acres",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 29,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Flagstaff Park",
+			"geo_position": "43.720979,-79.59089460000001",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "flagstaff_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 30,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Beaumonde Heights Park",
+			"geo_position": "43.74003829999999,-79.57263569999998",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "beaumonde_heights_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 31,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Smithfield Park",
+			"geo_position": "43.7474969,-79.59580979999998",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "smithfield_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 32,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Gihon Spring Park",
+			"geo_position": "43.7544748,-79.5944055",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "gihon_spring_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 33,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Amesbury Park",
+			"geo_position": "43.7065208,-79.48234079999997",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "amesbury_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 34,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Maple Leaf Park",
+			"geo_position": "43.7155957,-79.49394010000003",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "maple_leaf_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 35,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Pelmo Park",
+			"geo_position": "43.71394920984477,-79.51924249804767",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "pelmo_park",
+			"street_address": "38 Limerick Avenue"
+		}
+	},
+	{
+		"pk": 36,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Roding Park",
+			"geo_position": "43.7273799,-79.49323709999999",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "roding_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 37,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Chalkfarm Park",
+			"geo_position": "43.72664370778571,-79.51570193914796",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "chalkfarm_park",
+			"street_address": "10-32 Heavitree Drive"
+		}
+	},
+	{
+		"pk": 38,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Strathburn Park",
+			"geo_position": "43.7220002,-79.5327694",
+			"number_of_courts": 2,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "strathburn_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 39,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Stanley Park",
+			"geo_position": "43.74183499999999,-79.51502590000001",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "stanley_park_jane_st",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 40,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Lanyard Park",
+			"geo_position": "43.7473167,-79.5487531",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "lanyard_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 41,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Gracedale Park",
+			"geo_position": "43.7520989,-79.56209999999999",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "gracedale_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 42,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "North Park",
+			"geo_position": "43.715877,-79.47460710000001",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "north_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 43,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Grandravine Park",
+			"geo_position": "43.7520587,-79.49112830000001",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "grandravine_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 44,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Sentinel Park",
+			"geo_position": "43.7551433,-79.4988606",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "sentinel_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 45,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Firgrove Park",
+			"geo_position": "43.7507817,-79.5215786",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "firgrove_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 46,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Hullmar Park",
+			"geo_position": "43.7647172,-79.52556700000002",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "hullmar_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 47,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Antibes Community Centre",
+			"geo_position": "43.781149,-79.446999",
+			"number_of_courts": 1,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "antibes_community_centre",
+			"street_address": "140 Antibes Dr"
+		}
+	},
+	{
+		"pk": 48,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Ancaster Park",
+			"geo_position": "43.73312920000001,-79.46581809999998",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "ancaster_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 49,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Balmoral Park",
+			"geo_position": "43.7448187,-79.4498198",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": false,
+			"is_public": true,
+			"slug": "balmoral_park",
+			"street_address": ""
+		}
+	},
+	{
+		"pk": 50,
+		"model": "CourtInfo.court",
+		"fields": {
+			"fallback_image_url": "",
+			"city": 1,
+			"court_info": "",
+			"court_condition": "",
+			"name": "Clanton Park",
+			"geo_position": "43.74592991840362,-79.43710202181245",
+			"number_of_courts": 3,
+			"photosynth_url": "",
+			"has_lights": true,
+			"is_public": true,
+			"slug": "clanton_park",
+			"street_address": "4100-4112 Bathurst Street"
 		}
 	}
 ]

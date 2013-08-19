@@ -5,8 +5,7 @@ from CourtInfo.models import Court
 
 def viewCourtInfoBase(request):
     return render(request, 'CourtInfo/court_info.html',  )
-   
-   
+
 def viewCourtInfo(request, slug):
     try:
         court = Court.objects.get(slug = slug)
@@ -15,10 +14,6 @@ def viewCourtInfo(request, slug):
         
     context = {'court': court}
     return render(request, 'CourtInfo/court_info_view.html', context)
-
-
-def editCourtInfo(request): 
-    return HttpResponse("Need to implement CourtInfo.editCourtInfo")
 
 
 def getCourtMarkersJSON(request):

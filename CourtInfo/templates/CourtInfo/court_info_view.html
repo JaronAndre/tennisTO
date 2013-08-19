@@ -72,9 +72,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <div class="TextNormalStyle">
         {{ court.number_of_courts }} courts <br>
         {% if court.has_lights %}
-            Has lights <br>
+            Has overhead lights <br>
         {% else %}
-            Unlight <br>
+            No overhead lights <br>
         {% endif %} 
         {{ court.court_info_html|safe }}
     </div>
