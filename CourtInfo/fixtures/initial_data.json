@@ -1,4 +1,4 @@
-[ {
+[{
     "pk": 1,
     "model": "CourtInfo.country",
     "fields": {
@@ -25,6 +25,13 @@
     "fields": {
         "province": 1,
         "name": "Richmond Hill"
+    }
+}, {
+    "pk": 3,
+    "model": "CourtInfo.city",
+    "fields": {
+        "province": 1,
+        "name": "Markham"
     }
 }, {
     "pk": 1,
@@ -2294,5 +2301,202 @@
         "street_address": "30 Sewells Rd",
         "surface_type": 0
     }
-}
-]
+}, {
+    "pk": 127,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Bayview Glen Park",
+        "geo_position": "43.81074651686011,-79.39137754285275",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": false,
+        "is_public": true,
+        "slug": "bayview_glen_park",
+        "street_address": "",
+        "surface_type": 4
+    }
+}, {
+    "pk": 128,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Berczy Park",
+        "geo_position": "43.89472179016401,-79.30646562170409",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": false,
+        "is_public": true,
+        "slug": "berczy_park",
+        "street_address": "",
+        "surface_type": 0
+    }
+}, {
+    "pk": 129,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Duncan Park",
+        "geo_position": "43.8194704,-79.38280800000001",
+        "number_of_courts": 3,
+        "photosynth_url": "",
+        "has_lights": true,
+        "is_public": true,
+        "slug": "duncan_park",
+        "street_address": "",
+        "surface_type": 4
+    }
+}, {
+    "pk": 130,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Grandview Park",
+        "geo_position": "43.80508621748234,-79.41061249472045",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": true,
+        "is_public": true,
+        "slug": "grandview_park",
+        "street_address": "66 Henderson Ave",
+        "surface_type": 4
+    }
+}, {
+    "pk": 131,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Johnsview Park",
+        "geo_position": "43.81612399999999,-79.39758649999999",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": true,
+        "is_public": true,
+        "slug": "johnsview_park",
+        "street_address": "",
+        "surface_type": 4
+    }
+}, {
+    "pk": 132,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Morgan Park",
+        "geo_position": "43.879966401677606,-79.25947003306578",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": true,
+        "is_public": true,
+        "slug": "morgan_park",
+        "street_address": "George St and Franklin St",
+        "surface_type": 4
+    }
+}, {
+    "pk": 133,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Robinson Park",
+        "geo_position": "43.87385941433746,-79.27392101772159",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": false,
+        "is_public": true,
+        "slug": "robinson_park",
+        "street_address": "",
+        "surface_type": 0
+    }
+}, {
+    "pk": 134,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Thornlea Secondary School - Tennis Soccer Field",
+        "geo_position": "43.83037073142303,-79.40106334617155",
+        "number_of_courts": 4,
+        "photosynth_url": "",
+        "has_lights": false,
+        "is_public": true,
+        "slug": "thornlea_secondary_school",
+        "street_address": "Thornlea Secondary School - Tennis Soccer Field",
+        "surface_type": 4
+    }
+}, {
+    "pk": 135,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Toogood Park",
+        "geo_position": "43.8647566,-79.31926909999999",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": true,
+        "is_public": true,
+        "slug": "toogood_park",
+        "street_address": "",
+        "surface_type": 0
+    }
+}, {
+    "pk": 136,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Wismer Park",
+        "geo_position": "43.90038231920497,-79.27787842593386",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": false,
+        "is_public": true,
+        "slug": "wismer_park",
+        "street_address": "",
+        "surface_type": 0
+    }
+}, {
+    "pk": 137,
+    "model": "CourtInfo.court",
+    "fields": {
+        "fallback_image_url": "",
+        "city": 3,
+        "court_info": "",
+        "court_condition": "",
+        "name": "Willowheights Park",
+        "geo_position": "43.87823302975498,-79.36823757354125",
+        "number_of_courts": 2,
+        "photosynth_url": "",
+        "has_lights": false,
+        "is_public": true,
+        "slug": "willowheights_park",
+        "street_address": "",
+        "surface_type": 0
+    }
+}]
