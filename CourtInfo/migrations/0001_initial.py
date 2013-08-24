@@ -45,6 +45,7 @@ class Migration(SchemaMigration):
             ('is_public', self.gf('django.db.models.fields.BooleanField')(default=True)),
             ('number_of_courts', self.gf('django.db.models.fields.IntegerField')(default=2, blank=True)),
             ('has_lights', self.gf('django.db.models.fields.BooleanField')(default=True)),
+            ('surface_type', self.gf('django.db.models.fields.IntegerField')(default=4)),
             ('court_info', self.gf('django.db.models.fields.TextField')(blank=True)),
             ('court_condition', self.gf('django.db.models.fields.TextField')(blank=True)),
         ))
@@ -103,7 +104,8 @@ class Migration(SchemaMigration):
             'number_of_courts': ('django.db.models.fields.IntegerField', [], {'default': '2', 'blank': 'True'}),
             'photosynth_url': ('django.db.models.fields.URLField', [], {'max_length': '200', 'blank': 'True'}),
             'slug': ('django.db.models.fields.SlugField', [], {'unique': 'True', 'max_length': '50'}),
-            'street_address': ('django.db.models.fields.CharField', [], {'max_length': '150', 'blank': 'True'})
+            'street_address': ('django.db.models.fields.CharField', [], {'max_length': '150', 'blank': 'True'}),
+            'surface_type': ('django.db.models.fields.IntegerField', [], {'default': '4'})
         },
         u'CourtInfo.province': {
             'Meta': {'object_name': 'Province'},

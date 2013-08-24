@@ -11,7 +11,7 @@ class CourtAdmin(admin.ModelAdmin):
         (None,   { 'fields': ['name', 'slug']}),
         ('Location', { 'fields': ['street_address', 'city', 'geo_position']}),
         ('Visuals', {'fields': ['photosynth_url']}),
-        ('Details', {'fields': ['is_public', 'number_of_courts', 'has_lights', 'surface_type', 'court_info', 'court_condition']}),
+        ('Details', {'fields': ['is_public', 'number_of_courts', 'has_lights', 'has_public_washroom', 'surface_type', 'court_info', 'court_condition']}),
     ]
     inlines = [ThingsNearbyInline]
     

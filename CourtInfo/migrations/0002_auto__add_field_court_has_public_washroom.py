@@ -8,15 +8,15 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        # Adding field 'Court.surface_type'
-        db.add_column(u'CourtInfo_court', 'surface_type',
-                      self.gf('django.db.models.fields.IntegerField')(default=0),
+        # Adding field 'Court.has_public_washroom'
+        db.add_column(u'CourtInfo_court', 'has_public_washroom',
+                      self.gf('django.db.models.fields.NullBooleanField')(null=True, blank=True),
                       keep_default=False)
 
 
     def backwards(self, orm):
-        # Deleting field 'Court.surface_type'
-        db.delete_column(u'CourtInfo_court', 'surface_type')
+        # Deleting field 'Court.has_public_washroom'
+        db.delete_column(u'CourtInfo_court', 'has_public_washroom')
 
 
     models = {
@@ -39,6 +39,7 @@ class Migration(SchemaMigration):
             'fallback_image_url': ('django.db.models.fields.URLField', [], {'max_length': '200', 'blank': 'True'}),
             'geo_position': ('geoposition.fields.GeopositionField', [], {'max_length': '42'}),
             'has_lights': ('django.db.models.fields.BooleanField', [], {'default': 'True'}),
+            'has_public_washroom': ('django.db.models.fields.NullBooleanField', [], {'null': 'True', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'is_public': ('django.db.models.fields.BooleanField', [], {'default': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
@@ -46,7 +47,7 @@ class Migration(SchemaMigration):
             'photosynth_url': ('django.db.models.fields.URLField', [], {'max_length': '200', 'blank': 'True'}),
             'slug': ('django.db.models.fields.SlugField', [], {'unique': 'True', 'max_length': '50'}),
             'street_address': ('django.db.models.fields.CharField', [], {'max_length': '150', 'blank': 'True'}),
-            'surface_type': ('django.db.models.fields.IntegerField', [], {'default': '0'})
+            'surface_type': ('django.db.models.fields.IntegerField', [], {'default': '4'})
         },
         u'CourtInfo.province': {
             'Meta': {'object_name': 'Province'},

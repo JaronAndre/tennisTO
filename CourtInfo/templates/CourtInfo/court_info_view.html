@@ -81,6 +81,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         {% if court.surface_type %}
             {{ court.surface_type_string }} surface <br>
         {% endif %} 
+        {{ court.has_public_washroom|yesno:"Public washrooms available.,No public washrooms.," }}
         {{ court.court_info_html|safe }}
     </div>
     

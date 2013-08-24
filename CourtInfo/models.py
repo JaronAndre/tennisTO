@@ -67,6 +67,7 @@ class Court(models.Model):
     is_public = models.BooleanField(default=True)
     number_of_courts = models.IntegerField(default=2, blank=True)
     has_lights = models.BooleanField(default=True)
+    has_public_washroom = models.NullBooleanField()
     surface_type = models.IntegerField(default=4, choices=SURFACE_TYPE_CHOICES)
     court_info = models.TextField(blank=True)
     court_condition = models.TextField(blank=True)
