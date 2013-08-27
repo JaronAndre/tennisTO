@@ -10,10 +10,12 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="{% static 'tennisTO.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'controls.css' %}">
+        {% block css_includes %}
+        {% endblock %}
+        
         
         <script type="text/javascript" src="{% static 'jquery-1.10.2.js' %}"></script>
         <script type="text/javascript" src="{% static 'controls.js' %}"></script>
-        
         {% block javascript_includes %}
         {% endblock %}
         

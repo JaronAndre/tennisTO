@@ -52,7 +52,7 @@ SURFACE_TYPE_CHOICES = (
     (7, 'Concrete'),
     (8, 'Grass'),
 )
-     
+    
 class Court(models.Model):
     name = models.CharField(max_length=100)
     street_address = models.CharField(max_length=150, blank=True)

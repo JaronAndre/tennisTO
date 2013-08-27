@@ -35,12 +35,12 @@
 
 .SpacerMedium
 {
-    height: 10px;
+    height: 16px;
 }
 
 .SpacerSmall
 {
-    height: 6px;
+    height: 8px;
 }
 
 
@@ -76,7 +76,7 @@ input[type=text], input[type=email], input[type=password]
     font-size: 100%;
     color: #212121;
     border: 1px solid rgb(186,186,186);
-    background-color: transparent;
+    background-color: white;
 }
 
 div.textboxPlaceholder
@@ -100,8 +100,8 @@ div.textboxPlaceholder
 /* Buttons */
 input[type=submit]
 {
-    background-color: #D37FEF;
-    color: #fff;
+    background-color: #313131;
+    color: #E5D200;
     padding: 3px 12px 5px;
     border: 0px;
     height: 2.142em;
@@ -112,7 +112,7 @@ input[type=submit]
 
 input[type=submit]:hover
 {
-    background-color: #BB72D3;
+    background-color: black;
 }
 
 
