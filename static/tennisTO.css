@@ -32,16 +32,15 @@ tr, td
     height:55px;
     border:0px;
     border-bottom: solid 1px #E5D200;
-    padding: 0 25px 0 5px;
 }
 
 .logo
 {
-    margin-left:2px;
     font-size:30px; 
     float:left;
     color:white;
-    padding: 10px 0 0 15px;
+    margin-left: 22px;
+    padding: 10px 0 0 0px;
 }
 
 .navAndSearch
