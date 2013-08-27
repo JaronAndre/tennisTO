@@ -22,7 +22,7 @@ NUMBER_OF_COURT_CHOICES = [
 
 
 class CourtInfoForm(forms.Form):
-    name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'textboxWithPlaceholder'}))
+    name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':''}))
     
     # Location Info
     street_address = forms.CharField(max_length=150)

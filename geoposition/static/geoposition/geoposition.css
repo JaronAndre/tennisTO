@@ -6,6 +6,11 @@
     border: 1px solid #919191;
 }
 
+.geoposition-widget{
+    padding: 0px;
+    margin: 0px;
+}
+
 .geoposition-address, .geoposition-search {
     width: 50%;
 }

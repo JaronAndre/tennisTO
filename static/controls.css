@@ -79,23 +79,6 @@ input[type=text], input[type=email], input[type=password]
     background-color: white;
 }
 
-div.textboxPlaceholder
-{
-    color: #BBB;    
-    background-color: white;
-    padding-top: 6px;
-    white-space: nowrap;
-    padding-left: 9px;
-    float:left;
-    z-index:-1; 
-    width:100%;
-    position: absolute;
-    left:0px;
-    top:0px;
-    height: 32px;
-    box-sizing: border-box;
-}
-
 
 /* Buttons */
 input[type=submit]
