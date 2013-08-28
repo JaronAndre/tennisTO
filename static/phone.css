@@ -1,7 +1,6 @@
 .logo
 {
     font-size:25px; 
-    color: green;
 }
 
 .nav li
@@ -14,6 +13,7 @@
     padding-left:15px;
     padding-right:15px;
     max-width:560px;
+    width:100%;
     float:none;
 }
 
@@ -21,4 +21,14 @@
 {
     padding-left:15px;
     padding-right:15px;
+}
+
+input[type=submit]:hover
+{
+    background-color: inherit;
+}
+
+input[type=submit]:active
+{
+    background-color: black;
 }
