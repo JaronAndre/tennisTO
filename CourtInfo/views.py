@@ -46,7 +46,11 @@ def editCourtInfo(request, slug):
         }
         form = CourtInfoForm(initial=initial)
         
-    return render(request, 'CourtInfo/court_info_edit.html', {'form': form})  
+        context = {
+            'form': form,
+            'court': court,
+        }
+    return render(request, 'CourtInfo/court_info_edit.html', context)  
     
 
 def getCourtMarkersJSON(request):
