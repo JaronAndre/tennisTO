@@ -8,12 +8,13 @@
 {
     font-size:15px; 
 }
-
+	
 .contentColumn
 {
     padding-left:15px;
     padding-right:15px;
-    max-width: 560px;
+    max-width:560px;
+    float:none;
 }
 
 .pageHeaderContent

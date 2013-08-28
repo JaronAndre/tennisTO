@@ -23,11 +23,6 @@ tr, td
     clear: both;
 }
 
-.fullWidth
-{
-    width:1000px;
-}
-
 /* Banner Style */
 .header
 {
@@ -79,8 +74,7 @@ tr, td
     padding-left:40px;
     padding-right:40px;
     max-width:360px;
-    float:left;	
-    overflow-x:hidden;
+    float:left;
 }
 
 .pageHeader
