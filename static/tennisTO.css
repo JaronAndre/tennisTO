@@ -73,7 +73,8 @@ tr, td
 {
     padding-left:40px;
     padding-right:40px;
-    width:360px;
+    max-width:360px;
+    min-width:360px;
     float:left;
 }
 

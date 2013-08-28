@@ -13,7 +13,7 @@
     padding-left:15px;
     padding-right:15px;
     max-width:560px;
-    width:100%;
+    min-width:0px;
     float:none;
 }
 
