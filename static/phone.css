@@ -1,0 +1,23 @@
+.logo
+{
+    font-size:25px; 
+    color: green;
+}
+
+.nav li
+{
+    font-size:15px; 
+}
+
+.contentColumn
+{
+    padding-left:15px;
+    padding-right:15px;
+    max-width: 560;
+}
+
+.pageHeaderContent
+{
+    padding-left:15px;
+    padding-right:15px;
+}

@@ -4,14 +4,15 @@
     <head>
         <title> 
             {% block page_title %}
-                tennisTO 
+                tennisTO
             {% endblock %}
         </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=480, initial-scale=1, maximum-scale=1, user-scalable=false">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 user-scalable=no">
         
         <link rel="stylesheet" type="text/css" href="{% static 'tennisTO.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'controls.css' %}">
+        <link rel="stylesheet" media="handheld, only screen and (max-device-width: 600px)" href="{% static 'phone.css' %}">
         {% block css_includes %}
         {% endblock %}
         
