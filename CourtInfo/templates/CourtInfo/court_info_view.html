@@ -41,9 +41,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </iframe>
 {% endif %}
 <div class="pageHeader"> 
-  <div class="pageHeaderContent">
-      {{ court.name }} <a style="font-size:15px;" href="/courts/edit/{{ court.slug }}/"> edit court info </a>
-  </div>
+    <div class="pageHeaderContent">
+        {{ court.name }}
+    </div>
 </div>
 
 <div class="SpacerLarge"> </div>
@@ -139,5 +139,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <div class="contentColumn">
     <input type="submit" value="edit info" onclick="window.location='/courts/edit/{{ court.slug }}/'"/>
 </div>
+<div class="clear"></div>
+<div class="SpacerLarge"> </div>
 
 {% endblock %}
