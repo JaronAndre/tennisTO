@@ -30,13 +30,16 @@ Edit {{ court.name }}
 <div class="SpacerLarge"> </div>
 
 <div class="contentColumn">
+    <div class="fullWidth"></div>
 <!--
     <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
         Name
     </div>
     <div class="SpacerSmall"> </div>
     -->
-    Court name:<br>
+    <div class="TextNormalStyle"> 
+        Court name: 
+    </div>
     {{ form.name }}
     <div class="SpacerLarge"> </div>
 </div>
@@ -44,61 +47,85 @@ Edit {{ court.name }}
 <div class="clear"></div>
 
 <div class="contentColumn">
+    <div class="fullWidth"></div>
     <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
         Location
     </div>
     <div class="SpacerSmall"> </div>
     
     
-    Street address <span style="color:gray;">(optional)</span>:<br>
+    <div class="TextNormalStyle"> 
+        Street address <span class="TextSubtleStyle">(optional)</span>:
+    </div>
     {{ form.street_address }}
     <div class="SpacerSmall"> </div>
     
-    City: 
+    <div class="TextNormalStyle"> 
+        City:
+    </div>
     {{ form.city }}
     <div class="SpacerMedium"> </div>
     
-    Location on map:<br>
+    <div class="TextNormalStyle"> 
+        Location on map:
+    </div>
     {{ form.media }}
     {{ form.geo_position }}<br>
     
     <div class="SpacerLarge"> </div>
+    
 </div>
 
 <div class="contentColumn">
+    <div class="fullWidth"></div>
     <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
         Court Info
     </div>
     <div class="SpacerSmall"> </div>
     
-    {{ form.is_public }} Is public
+    <div class="TextNormalStyle"> 
+        {{ form.is_public }} Is public 
+    </div>
     <div class="SpacerSmall"> </div>
     
-    {{ form.has_lights }} Has overhead lights
+    <div class="TextNormalStyle">
+        {{ form.has_lights }} Has overhead lights 
+    </div>
     <div class="SpacerSmall"> </div>
     
-    {{ form.has_public_washroom }} Has public washrooms
+    <div class="TextNormalStyle">
+        {{ form.has_public_washroom }} Has public washrooms
+    </div>
     <div class="SpacerMedium"> </div>
     
-    Number of courts:
+    <div class="TextNormalStyle">
+        Number of courts:
+    </div>
     {{ form.number_of_courts }}
     <div class="SpacerMedium"> </div>
     
-    Surface type: 
+    <div class="TextNormalStyle">
+        Surface type:
+    </div>
     {{ form.surface_type }}
     <div class="SpacerMedium"> </div>
     
-    Court conditions: <br>
+    <div class="TextNormalStyle">
+        Court conditions:
+    </div>
     {{ form.court_condition }}
     <div class="SpacerSmall"> </div>
     
-    Additional info: <br>
-    {{ form.court_info }} <br>
+    <div class="TextNormalStyle">
+        Additional info:
+    </div>
+    {{ form.court_info }}
     <div class="SpacerLarge"> </div>
 </div>
 
 <!--
 <div class="contentColumn">
+    <div class="fullWidth"></div>
     <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
         Things nearby
     </div>
@@ -107,6 +134,7 @@ Edit {{ court.name }}
 </div>
 
 <div class="contentColumn">
+    <div class="fullWidth"></div>
     <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
         Photo gallery
     </div>
