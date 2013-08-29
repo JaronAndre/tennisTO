@@ -81,7 +81,7 @@ input[type=text], input[type=email], input[type=password]
 
 
 /* Buttons */
-input[type=submit]
+input[type=submit], input[type=button]
 {
     background-color: #313131;
     color: white;
@@ -93,7 +93,7 @@ input[type=submit]
     font-size:17px;
 }
 
-input[type=submit]:hover
+input[type=submit]:hover, input[type=button]:hover
 {
     background-color: black;
 }

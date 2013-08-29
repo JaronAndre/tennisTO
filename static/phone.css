@@ -23,12 +23,12 @@
     padding-right:15px;
 }
 
-input[type=submit]:hover
+input[type=submit]:hover, input[type=button]:hover
 {
     background-color: #313131;
 }
 
-input[type=submit]:active
+input[type=submit]:active, input[type=button]:active
 {
     background-color: black;
 }

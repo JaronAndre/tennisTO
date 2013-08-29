@@ -25,16 +25,16 @@ class CourtInfoForm(forms.Form):
     name = forms.CharField(max_length=100)
     
     # Location Info
-    street_address = forms.CharField(max_length=150)
+    street_address = forms.CharField(max_length=150, required=False)
     city = forms.ModelChoiceField(queryset=City.objects.all())
     geo_position = GeopositionField()
     
     # Court Info
-    is_public = forms.BooleanField()
+    is_public = forms.BooleanField(required=False)
     number_of_courts = forms.ChoiceField(choices=NUMBER_OF_COURT_CHOICES)
-    has_lights = forms.BooleanField()
-    has_public_washroom = forms.BooleanField()
+    has_lights = forms.BooleanField(required=False)
+    has_public_washroom = forms.BooleanField(required=False)
     surface_type = forms.ChoiceField(choices=SURFACE_TYPE_CHOICES)
-    court_info = forms.CharField(widget=forms.Textarea)
-    court_condition = forms.CharField(widget=forms.Textarea)
+    court_info = forms.CharField(widget=forms.Textarea, required=False)
+    court_condition = forms.CharField(widget=forms.Textarea, required=False)
     
