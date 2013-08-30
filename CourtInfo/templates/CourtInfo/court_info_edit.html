@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block page_title %}
 Edit {{ court.name }}
@@ -8,14 +9,43 @@ Edit {{ court.name }}
 {% endblock %}
 
 {% block javascript_includes %}
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.backbone.js"></script>
+<script type="text/javascript" src="{% static 's3upload.js' %}"></script>
+
+
 {% endblock %}
 
 
 {% block additional_scripts %}
+function s3_upload(){
+    var s3upload = new S3Upload({
+        file_dom_selector: '#file',
+        s3_sign_put_url: '/sign_s3_upload/',
+        s3_object_name: 'vesel.jpg',
+
+        onProgress: function(percent, message) { 
+            $('#status').html('Upload progress: ' + percent + '%' + message);
+        },
+        onFinishS3Put: function(url) { 
+            $('#status').html('Upload completed. Uploaded to: '+ url);
+            // $("#avatar_url").val(url);
+            $("#preview").html('<img src="' + url + '" style="width:300px;" />');
+        },
+        onError: function(status) {
+            $('#status').html('Upload error: ' + status);
+        }
+    });
+}
 {% endblock %}
 
 
 {% block content %}
+
+<input type="file" id="file" onchange="s3_upload();"/>
+<p id="progress">Please select a file </p>
+<div id="status">no status yet</div>
+<div id="preview"><img src="/static/default.png"  /></div>
 
 <form action="" method="post">
     {% csrf_token %}
