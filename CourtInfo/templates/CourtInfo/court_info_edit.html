@@ -42,7 +42,7 @@ function s3_upload(){
 
 {% block content %}
 
-<input type="file" id="file" onchange="s3_upload();"/>
+<input type="file" id="file" onchange="s3_upload();" accept='image/*'/>
 <p id="progress">Please select a file </p>
 <div id="status">no status yet</div>
 <div id="preview"><img src="/static/default.png"  /></div>
