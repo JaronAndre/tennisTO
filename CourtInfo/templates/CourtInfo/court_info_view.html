@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block page_title %}
 tennisTO - {{ court.name }}
@@ -6,6 +7,9 @@ tennisTO - {{ court.name }}
 
 {% block javascript_includes %}
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.backbone.js"></script>
+<script type="text/javascript" src="{% static 's3upload.js' %}"></script>
 {% endblock %}
 
 
@@ -31,6 +35,26 @@ function initialize()
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+function s3_upload(){
+    var s3upload = new S3Upload({
+        file_dom_selector: '#file',
+        s3_sign_put_url: '/sign_s3_upload/',
+
+        onProgress: function(percent, message) { 
+            $('#status').html('Upload progress: ' + percent + '%' + message);
+        },
+        onFinishS3Put: function(url) { 
+            $('#status').html('Upload completed. Uploaded to: '+ url);
+            // $("#avatar_url").val(url);
+            $("#preview").html('<img src="' + url + '" style="width:300px;" />');
+        },
+        onError: function(status) {
+            $('#status').html('Upload error: ' + status);
+        }
+    });
+}
 {% endblock %}
 
 
@@ -97,17 +121,33 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <div class="SpacerLarge"> </div>
     
     <div class="TextTitle2Style" style="border-bottom:solid 1px #919191; width:250px;">
-        Things Nearby
+        Nearby Food + Drinks
     </div>
     <div class="TextNormalStyle"> 
+        {% if yelp.businesses %}
+            <div style="line-height:21px">
+                Reviews from 
+                <a href="http://www.yelp.ca">
+                    <img style="vertical-align:bottom;" src="http://s3-media1.ak.yelpcdn.com/assets/2/www/img/55e2efe681ed/developers/yelp_logo_50x25.png"/>
+                </a>
+            </div>
+        {% endif %}
+        {% for business in yelp.businesses %}
+            <a href="{{ business.url }}"> {{ business.name }} </a> <img src="{{ business.rating_img_url_small }}"/> <br>
+        {% endfor %}
+        {% if yelp.businesses %}
+            <div class="SpacerMedium"> </div>
+        {% endif %}
+        
         {% for thing in court.thingsnearby_set.all %}
             {% if thing.url %}
                 <a href="{{ thing.url }}"> {{ thing.text }} </a>
             {% else %}
                 {{ thing.text }}
-            {% endif %}   
+            {% endif %}
             <br>
         {% endfor %}
+        <a> Add your recommendation </a>
     </div>
     
     <div class="SpacerLarge"> </div>
@@ -122,8 +162,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <div style="float:left; width:40px; height:40px; border: 1px solid black; background-color:#919191; margin-left:3px;"> </div>
     <div style="float:left; width:40px; height:40px; border: 1px solid black; background-color:#919191; margin-left:3px;"> </div>
     <div style="float:left; width:40px; height:40px; border: 1px solid black; background-color:#919191; margin-left:3px;"> </div>
+    <div class="clear"></div>
+     
+    <a href="" onclick="document.getElementById('file').click(); return false;">Add photo</a>
+    <input type="file" id="file" name="upload" style="visibility: hidden; width: 1px; height: 1px" onchange="s3_upload();" accept='image/*' />
+    <div id="status">no status yet</div>
+    <div id="preview"><img src="/static/default.png"  /></div>
     
-    <br> 
+    
     <div class="SpacerLarge"> </div>
     <div class="SpacerLarge"> </div>
     <div class="SpacerLarge"> </div>

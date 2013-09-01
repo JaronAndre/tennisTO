@@ -3,7 +3,9 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.core import serializers
 from CourtInfo.models import Court
 from CourtInfo.forms import CourtInfoForm
+from CourtInfo import Yelp
 import time, os, json, base64, hmac, sha, urllib
+import uuid
 
 def viewCourtInfoBase(request):
     return HttpResponse('CourtInfo.viewCourtInfoBase')
@@ -13,8 +15,11 @@ def viewCourtInfo(request, slug):
         court = Court.objects.get(slug = slug)
     except Court.DoesNotExist:
         raise Http404
-        
-    context = {'court': court}
+       
+    context = {
+        'court': court,
+        'yelp': Yelp.request(court.geo_position.latitude, court.geo_position.longitude)
+    }
     return render(request, 'CourtInfo/court_info_view.html', context)
 
     
@@ -28,7 +33,6 @@ def editCourtInfo(request, slug):
     if request.method == 'POST':
         form = CourtInfoForm(request.POST)
         if form.is_valid():
-            
             court.name = form.cleaned_data['name']
             
             court.street_address = form.cleaned_data['street_address']
@@ -70,11 +74,11 @@ def editCourtInfo(request, slug):
     
 
 def sign_s3(request):
-    AWS_ACCESS_KEY = os.environ.get('AWS_ACCESS_KEY_ID')       
+    AWS_ACCESS_KEY = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     S3_BUCKET = os.environ.get('S3_BUCKET')
 
-    object_name = request.GET['s3_object_name']
+    object_name = 'images/' + uuid.uuid4().hex
     mime_type = request.GET['s3_object_type']
 
     expires = int(time.time()+10)
@@ -89,7 +93,7 @@ def sign_s3(request):
 
     return HttpResponse(json.dumps({
         'signed_request': '%s?AWSAccessKeyId=%s&Expires=%d&Signature=%s' % (url, AWS_ACCESS_KEY, expires, signature),
-         'url': url
+        'url': url
     })) 
 
 
