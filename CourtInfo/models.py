@@ -1,5 +1,7 @@
 from django.db import models
 from geoposition.fields import GeopositionField
+import os
+import uuid
 
 
 class Country(models.Model):
@@ -104,3 +106,26 @@ class ThingsNearby(models.Model):
 
     def __unicode__(self):
         return self.text
+        
+
+class CourtPhoto(models.Model):
+    court = models.ForeignKey(Court)
+    caption = models.CharField(max_length=200, blank=True)
+    image_url = models.URLField(blank=True)
+    time_added = models.DateTimeField(auto_now=True)
+    is_validated = models.BooleanField(default=False)
+    
+    @staticmethod
+    def create_unique_path_name(court):
+        # Add a special path if we're testing on a dev machine 
+        # instead of the live server
+        path = os.environ.get('S3_LOCAL_TEST_PATH')
+        if path:
+            path = path + str(court.pk) + '/images/'
+        else:
+            path = str(court.pk) + '/images/'
+    
+        return path + uuid.uuid4().hex
+        
+    def __unicode__(self):
+        return self.image_url

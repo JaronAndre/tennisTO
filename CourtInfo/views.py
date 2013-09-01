@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core import serializers
-from CourtInfo.models import Court
+from CourtInfo.models import Court, CourtPhoto
 from CourtInfo.forms import CourtInfoForm
 from CourtInfo import Yelp
 import time, os, json, base64, hmac, sha, urllib
@@ -73,15 +73,20 @@ def editCourtInfo(request, slug):
     return render(request, 'CourtInfo/court_info_edit.html', context)  
     
 
-def sign_s3(request):
+def sign_s3(request, court_id):
     AWS_ACCESS_KEY = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     S3_BUCKET = os.environ.get('S3_BUCKET')
 
-    object_name = 'images/' + uuid.uuid4().hex
+    try:
+        court =  Court.objects.get(pk = court_id)
+    except Court.DoesNotExist:
+        raise Http404
+    
+    object_name = CourtPhoto.create_unique_path_name(court)
     mime_type = request.GET['s3_object_type']
 
-    expires = int(time.time()+10)
+    expires = int(time.time() + 10)
     amz_headers = "x-amz-acl:public-read"
 
     put_request = "PUT\n\n%s\n%d\n%s\n/%s/%s" % (mime_type, expires, amz_headers, S3_BUCKET, object_name)
@@ -89,8 +94,13 @@ def sign_s3(request):
     signature = base64.encodestring(hmac.new(AWS_SECRET_KEY,put_request, sha).digest())
     signature = urllib.quote_plus(signature.strip())
 
-    url = 'https://%s.s3.amazonaws.com/%s' % (S3_BUCKET, object_name)
-
+    url = 'https://{0}.s3.amazonaws.com/{1}'.format(S3_BUCKET, object_name)
+    new_photo = CourtPhoto(
+        court=court, 
+        image_url=url)
+    new_photo.save()
+    
+    
     return HttpResponse(json.dumps({
         'signed_request': '%s?AWSAccessKeyId=%s&Expires=%d&Signature=%s' % (url, AWS_ACCESS_KEY, expires, signature),
         'url': url
